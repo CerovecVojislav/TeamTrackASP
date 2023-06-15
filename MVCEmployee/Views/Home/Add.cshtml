@@ -1,0 +1,24 @@
+﻿@model MVCEmployee.Models.Employee
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Lets add an employee</h1>
+<br />
+@using(Html.BeginForm("Add", "Home", FormMethod.Post))
+{   
+    <label id="bold1">Name: </label>
+    @Html.TextBoxFor(x => x.Name, new { @minlength = "5"})
+    <br />
+    <br />
+    <label id="bold1">E-mail: </label>
+    @Html.TextBoxFor(x => x.Email, new { @minlength = "8"})
+    <br />
+    <br />
+    <label id="bold1">Phone: </label>
+    @Html.TextBoxFor(x => x.Phone, new { @minlength = "8"})
+    <br />
+    <br />
+    <button type="submit">Add</button>
+
+}

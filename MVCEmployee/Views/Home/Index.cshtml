@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Welcome to Employe Manager. To start click "Add".</p>
+    <table align="center">
+        <tr width="100%">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+            @foreach(Employee i in ViewBag.List)
+            {
+                <tr>
+                <td>@i.ID</td>
+                <td>@i.Name</td>
+                <td>@i.Email</td>
+                <td>@i.Phone</td>
+                </tr>
+            }
+    </table>
+
+    <a href="/Home/Add"><img src="/img/add.png"></a>
+    <a href="/Home/Update"><img src="/img/update.png"></a>
+    <a href="/Home/Remove"><img src="/img/remove.png"></a>
+
+</div>

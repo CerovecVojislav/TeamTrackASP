@@ -1,0 +1,30 @@
+html {
+    font-size: 14px;
+
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-image: url("/img/bg.jpg");
+    margin-bottom: 60px;
+}
+.Box {
+    margin:20%;
+    text-align:center;
+    background-color:white;
+    border-radius:100px;
+
+}
+th, td {
+    border: 1px solid black;
+}

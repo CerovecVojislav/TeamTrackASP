@@ -1,0 +1,15 @@
+﻿@model MVCEmployee.Models.Employee
+@{
+    ViewData["Title"] = "Delete";
+}
+<h1>Lets remove an employee</h1>
+<br />
+@using(Html.BeginForm("Remove", "Home", FormMethod.Post))
+{   
+    <label id="bold1">ID: </label>
+    @Html.TextBoxFor(x => x.ID, new { @minlength = ""})
+    <br />
+    <br />
+    <button type="submit">Remove</button>
+
+}
