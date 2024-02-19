@@ -1,7 +1,7 @@
-# MVC Employee Project  - ASP.NET
+# TeamTrackASP
 
 ## Introduction:
-The MVC Employee Project is a simple application developed using the Model-View-Controller (MVC) architectural pattern in ASP.NET. This project does not rely on a database and instead uses in-memory data storage.
+TeamTrackASP is a simple application developed using the Model-View-Controller (MVC) architectural pattern in ASP.NET. This project does not rely on a database and instead uses in-memory data storage.
 
 ## Project Structure:
 The project follows the MVC pattern, which separates the application into three main components:
